@@ -1,58 +1,41 @@
-# babel-react-rollup-starter [![Build Status](https://travis-ci.org/yamafaktory/babel-react-rollup-starter.svg?branch=master)](https://travis-ci.org/yamafaktory/babel-react-rollup-starter) [![npm version](https://img.shields.io/npm/v/babel-react-rollup-starter.svg?style=flat)](https://www.npmjs.com/package/babel-react-rollup-starter) [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+# Features
 
+## File strucutre:
 
-> A simple boilerplate for web apps with [React](https://facebook.github.io/react/), [Babel](http://babeljs.io/), and [Rollup](http://rollupjs.org/).
+1.  Ability to avoid relative path hell(src/common.js)
+2.  Jest integration
+3.  Test file in same folder& **tests** for complex test case
 
-## Installation
+## Local Dev Environment
 
-Via **npm** into a fresh project:
+1.  Browsersync for live reload
+2.  Source map in dev environment
 
-```sh
-npm i babel-react-rollup-starter
-```
+## Tool for develop action and reducer for component related state
 
-Or using Git:
+1.  Redux chrome dev tool integration
 
-```sh
-git clone https://github.com/yamafaktory/babel-react-rollup-starter.git
-cd babel-react-rollup-starter
-npm i
-```
+## CSS
 
-For a faster installation, use [yarn](https://yarnpkg.com/en/) instead of npm.
+1.  Styled componenet example
+2.  Other post css plugin
 
-## Usage
+## Test
 
-### Development
+1.  Jest integration
 
-Running the following command will open your default browser to `html/index-dev.html`. Thanks to [Browsersync](https://www.browsersync.io/), any modifications inside `src` trigger a browser refresh:
+## Version
 
-```sh
-npm start
-```
+1.  Automatic version command
 
-To generate a development bundle:
+## Code qualification
 
-```sh
-npm run build:dev
-```
+1.  Eslint
+2.  Flow
 
-### Production
+## Size :
 
-1. First run the following command:
+### Min
 
- ```sh
- npm run build
- ```
-
-2. Open `html/index.html` in your browser.
-
-The Rollup production configuration file changes `NODE_ENV` to production and minifies the code with [UglifyJS](http://lisperator.net/uglifyjs/).
-
-## Linting
-
-The code quality is checked by the [JavaScript Standard Style](http://standardjs.com/).
-
-## License
-
-Released under the [MIT license](https://opensource.org/licenses/MIT) by Davy Duperron.
+1.  Allow es6 output for treeshaking
+2.  Min js by uglify

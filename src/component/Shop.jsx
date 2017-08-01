@@ -9,16 +9,13 @@ import Product from 'component/Product';
 import * as Action from 'action';
 export class Shop extends React.Component {
   static propTypes = {
-    sandWichNo: PropTypes.number.isRequired,
+    sandWichNo: PropTypes.number.isRequired
   };
   static defaultProps = {
-    companyName: 'Subway',
+    companyName: 'Subway'
   };
-  constructor(props) {
-    super(props);
-  }
 
-  render() {
+  render () {
     return (
       <article>
         <h1>
@@ -33,13 +30,13 @@ export class Shop extends React.Component {
   }
 }
 
-function mapStateToProps(state, ownProps) {
+function mapStateToProps (state, ownProps) {
   //
   return {sandWichNo: state.sandWichNo, customer: state.customer};
 }
 
 // Map Redux actions to component props,a way that allow presentation component to get dispatch action function from parent
-function mapDispatchToProps(dispatch, ownProps) {
+function mapDispatchToProps (dispatch, ownProps) {
   //
   return {addSandWich: () => dispatch(Action.addSandWich())};
 }

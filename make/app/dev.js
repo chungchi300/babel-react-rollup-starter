@@ -7,18 +7,18 @@ import resolve from 'rollup-plugin-node-resolve';
 import includePaths from 'rollup-plugin-includepaths';
 
 let includePathOptions = {
-  paths: ['src/common'],
+  paths: ['src/common']
 };
 export default {
-  dest: 'build/app.js',
-  entry: 'src/index.js',
+  dest: 'build/app/index.js',
+  entry: 'src/app.js',
   format: 'iife',
   plugins: [
     includePaths(includePathOptions),
 
     babel({
       babelrc: true,
-      exclude: 'node_modules/**',
+      exclude: 'node_modules/**'
     }),
     cjs({
       exclude: 'node_modules/process-es6/**',
@@ -28,17 +28,17 @@ export default {
           'Children',
           'Component',
           'PropTypes',
-          'createElement',
+          'createElement'
         ],
-        'node_modules/react-dom/index.js': ['render'],
-      },
+        'node_modules/react-dom/index.js': ['render']
+      }
     }),
     globals(),
     replace({'process.env.NODE_ENV': JSON.stringify('development')}),
     resolve({
       browser: true,
-      main: true,
-    }),
+      main: true
+    })
   ],
-  sourceMap: true,
+  sourceMap: true
 };

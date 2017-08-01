@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import {total} from 'helper/priceCalculation';
 import {double} from 'helper/weightCalculation';
 export default class Product extends React.Component {
-  get buggerSize() {
+  get buggerSize () {
     return double(125);
   }
-  render() {
+  render () {
     return (
       <div>
         <em>Our double  meat chicken breast weight is {this.buggerSize} g.</em>

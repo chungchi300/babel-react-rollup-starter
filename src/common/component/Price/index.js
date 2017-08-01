@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import {total} from 'helper/priceCalculation';
 export default class Price extends React.Component {
   static propTypes = {
-    sandWichNo: PropTypes.number.isRequired,
+    sandWichNo: PropTypes.number.isRequired
   };
-  render() {
+  render () {
     return (
       <div>
         <div>Current Sandwich :{this.props.sandWichNo}</div>

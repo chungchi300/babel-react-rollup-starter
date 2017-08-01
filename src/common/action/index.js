@@ -1,5 +1,5 @@
-export function addSandWich() {
+export function addSandWich () {
   return {
-    type: 'ADD_SAND_WICH',
+    type: 'ADD_SAND_WICH'
   };
 }

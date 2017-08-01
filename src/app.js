@@ -14,8 +14,8 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
 
-    <Shop customer={{name: 'jeff chung', isVip: true}} />
+    <Shop />
 
   </Provider>,
-  root,
+  root
 );

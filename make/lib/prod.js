@@ -7,10 +7,10 @@ import config from '../app/dev';
 
 // Inject the production settings.
 config.dest = 'build/lib/index.min.js';
-
-config.plugins[3] = replace({
-  'process.env.NODE_ENV': JSON.stringify('production')
-});
+// config.external = ['react', 'react-dom'];
+// config.plugins[3] = replace({
+//   'process.env.NODE_ENV': JSON.stringify('production')
+// });
 // config.plugins.push(uglify());
 
 export default config;

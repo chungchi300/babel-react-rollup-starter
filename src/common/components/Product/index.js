@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {total} from 'helper/priceCalculation';
-import {double} from 'helper/weightCalculation';
+import {total} from 'helpers/priceCalculation';
+import {double} from 'helpers/weightCalculation';
 export default class Product extends React.Component {
   get buggerSize () {
     return double(125);

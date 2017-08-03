@@ -1,12 +1,12 @@
 import React from 'react';
-import {double} from 'helper/weightCalculation';
+import {double} from 'helpers/weightCalculation';
 
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import Customer from 'component/Customer';
-import Price from 'component/Price';
-import Product from 'component/Product';
-import * as Action from 'action';
+import Customer from 'components/Customer';
+import Price from 'components/Price';
+import Product from 'components/Product';
+import * as Action from 'actions';
 export class Shop extends React.Component {
   static propTypes = {
     sandWichNo: PropTypes.number.isRequired

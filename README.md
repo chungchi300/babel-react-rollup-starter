@@ -45,7 +45,7 @@
 1.  Allow es6 output for treeshaking
 2.  Min js by uglify
 
-## Usage of app
+## Usage as lib
 ### package.json
 "rollup-babel-react-redux-lib-boilerplate":"git@github.com:chungchi300/rollup-babel-react-redux-lib-boilerplate.git",
 

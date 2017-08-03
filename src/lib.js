@@ -1,9 +1,9 @@
-import * as Action from 'action';
-import Customer from 'component/Customer';
-import Price from 'component/Price';
-import Product from 'component/Product';
-import customerReducer from 'reducer/customer';
-import sandWichNoReducer from 'reducer/sandWichNo';
+import * as Action from 'actions';
+import Customer from 'components/Customer';
+import Price from 'components/Price';
+import Product from 'components/Product';
+import customerReducer from 'reducers/customer';
+import sandWichNoReducer from 'reducers/sandWichNo';
 export default {
   Action,
   Customer,

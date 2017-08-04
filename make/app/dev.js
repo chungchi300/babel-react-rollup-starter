@@ -18,7 +18,8 @@ export default {
 
     babel({
       babelrc: true,
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
+      runtimeHelpers: true
     }),
     cjs({
       exclude: 'node_modules/process-es6/**',

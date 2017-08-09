@@ -23,8 +23,7 @@ export default {
     }),
     cjs({
       sourceMap: false,
-      exclude: 'node_modules/process-es6/**',
-      include: ['node_modules/**'],
+
       namedExports: {
         'node_modules/react/react.js': [
           'Children',

@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 // Import the components.
-import Shop from './component/Shop.jsx';
+import Shop from './component/Shop';
 import configureStore from './configureStore';
 // Define the root element.
 

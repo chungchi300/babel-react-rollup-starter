@@ -79,9 +79,11 @@
   },
   "scripts": {
     "lint": "eslint src --quiet --cache && echo \"eslint: no lint errors\"",
+    "prelocalAppBuild:dev": "rm -rf build/*",
     "localAppBuild:dev": "rollup -c make/app/dev.js -w",
     "localAppStart": "npm-run-all --parallel localAppBuild:dev browse",
     "browse": "browser-sync start --s --index 'html/index-dev.html' --files 'html/**/*.html, build/**/*.js' --no-notify",
+    "prebuild": "rm -rf build/*",
     "build": "rollup -c make/lib/prod.js",
     "test": "jest",
     "test-watch": "jest --watchAll",

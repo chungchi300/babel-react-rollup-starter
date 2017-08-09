@@ -22,6 +22,7 @@ export default {
       runtimeHelpers: true
     }),
     cjs({
+      sourceMap: false,
       exclude: 'node_modules/process-es6/**',
       include: ['node_modules/**'],
       namedExports: {

@@ -20,7 +20,7 @@ export class Shop extends React.Component {
       <article>
         <h1>
           <Customer customer={this.props.customer} /> -
-          {this.props.companyName}
+          {this.props.companyName}aaddddssdddd
         </h1>
         <Product />
         <div onClick={this.props.addSandWich}>Click me to order</div>

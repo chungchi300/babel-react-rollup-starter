@@ -11,7 +11,7 @@ let includePathOptions = {
 };
 export default {
   dest: 'build/app/index.js',
-  entry: 'src/app.js',
+  entry: 'src/app/index.js',
   format: 'iife',
   plugins: [
     includePaths(includePathOptions),
